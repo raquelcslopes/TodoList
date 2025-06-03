@@ -1,37 +1,35 @@
-# TodoList
+# Todo List
 
-Este é um projeto Java simples para gerenciar uma lista de tarefas (To-Do List), implementando funcionalidades básicas como adicionar, remover, marcar como completa/incompleta e priorizar tarefas.
+This is a simple Java-based Todo List application. It allows users to manage their tasks efficiently by adding, completing, and prioritizing items.
 
-## Estrutura do Projeto
+## Features
+- Add new tasks to your todo list
+- Mark tasks as complete or incomplete
+- Set priority for each task
+- Handle empty list and invalid state transitions with custom exceptions
 
-- `Main.java`: Classe principal para execução do programa.
-- `TodoList.java`: Implementação da lista de tarefas e suas operações.
-- `Priority.java`: Enumeração para definir prioridades das tarefas.
-- `CompleteState.java`: Enumeração para o estado de conclusão das tarefas.
-- `AlreadyCompleteException.java`, `AlreadyIncompleteException.java`, `EmptyListException.java`: Exceções customizadas para controle de erros.
+## Requirements
+- Java 8 or higher
 
-## Como Executar
-
-1. Certifique-se de ter o Java instalado (Java 8+).
-2. Compile os arquivos:
+## How to Run
+1. Clone this repository or download the source code.
+2. Navigate to the `src` directory.
+3. Compile the Java files:
    ```sh
-   javac src/*.java
+   javac *.java
    ```
-3. Execute o programa principal:
+4. Run the application:
    ```sh
-   java -cp src Main
+   java Main
    ```
 
-## Funcionalidades
-- Adicionar tarefas com prioridade.
-- Marcar tarefas como completas ou incompletas.
-- Remover tarefas.
-- Listar tarefas e seus estados.
-- Tratamento de exceções para operações inválidas.
+## Project Structure
+- `Main.java`: Entry point of the application
+- `TodoList.java`: Core logic for managing the todo list
+- `Priority.java`: Enum for task priorities
+- `CompleteState.java`: Enum for task completion state
+- `AlreadyCompleteException.java`, `AlreadyIncompleteException.java`, `EmptyListException.java`: Custom exception classes
 
-## Contribuição
-Pull requests são bem-vindos. Para mudanças maiores, abra uma issue primeiro para discutir o que você gostaria de modificar.
-
-## Licença
-Este projeto é apenas para fins educacionais.
+## License
+This project is for educational purposes.
 
